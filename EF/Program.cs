@@ -15,7 +15,7 @@ namespace EF
             using (var ctx = new MyContext())
             {
                 ctx.Configuration.AutoDetectChangesEnabled = false;
-                ctx.Configuration.ValidateOnSaveEnabled = false;
+                //ctx.Configuration.ValidateOnSaveEnabled = false;
                 var items = ctx.Items.ToList();
 
                 var list = new List<Item>();
