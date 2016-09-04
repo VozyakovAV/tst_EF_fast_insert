@@ -50,10 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB\DbContext.cs" />
     <Compile Include="DB\DbInitializer.cs" />
     <Compile Include="DB\Item.cs" />
+    <Compile Include="DB\Maps.cs" />
     <Compile Include="DB\MyContext.cs" />
+    <Compile Include="DB\SubItem.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace EF
 {
-    public class Item
+    public class SubItem
     {
         public int Id { get; set; }
         public int Number { get; set; }
         public string Name { get; set; }
 
-        public ICollection<SubItem> SubItems { get; set; }
-
-        public Item()
-        {
-            SubItems = new List<SubItem>();
-        }
+        public int ItemId { get; set; }
+        public Item Item { get; set; }
     }
 }

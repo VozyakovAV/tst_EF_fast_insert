@@ -7,15 +7,8 @@ using System.Threading.Tasks;
 
 namespace EF
 {
-    //public class DbInitializer : CreateDatabaseIfNotExists<MyContext>
-    public class DbInitializer : DropCreateDatabaseAlways<MyContext>
+    public class DbInitializer : DropCreateDatabaseIfModelChanges<MyContext>
+    //public class DbInitializer : DropCreateDatabaseAlways<MyContext>
     {
-        protected override void Seed(MyContext db)
-        {
-            db.Items.Add(new Item { Name = "Война и мир" });
-            db.Items.Add(new Item { Name = "гы гы гы" });
-
-            base.Seed(db);
-        }
     }
 }
